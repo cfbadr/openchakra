@@ -36,19 +36,6 @@ export const productHunt: IComponents = {
     parent: 'comp-K6IAQM3L5NR7W',
     rootParentType: 'Text',
   },
-  'comp-K6IASJJIS6V77': {
-    id: 'comp-K6IASJJIS6V77',
-    props: {
-      size: 'md',
-      name: 'P',
-      fontSize: '3xl',
-      backgroundColor: 'orange.500',
-    },
-    children: [],
-    type: 'Avatar',
-    parent: 'comp-K6IAUUX80CXD6',
-    rootParentType: 'Avatar',
-  },
   'comp-K6IATGONJ9KDR': {
     children: [],
     type: 'InputLeftAddon',
@@ -197,30 +184,6 @@ export const productHunt: IComponents = {
     parent: 'comp-root',
     rootParentType: 'Stack',
   },
-  'comp-K6IAX6IXQ7CAC': {
-    id: 'comp-K6IAX6IXQ7CAC',
-    props: {
-      size: 'md',
-      src:
-        'https://pbs.twimg.com/profile_images/1227316457845018626/8-B-ZDL8_400x400.jpg',
-    },
-    children: ['comp-K6IAYZAIA7RJT'],
-    type: 'Avatar',
-    parent: 'comp-K6IAWV0WFDNW7',
-    rootParentType: 'Avatar',
-  },
-  'comp-K6IAYZAIA7RJT': {
-    id: 'comp-K6IAYZAIA7RJT',
-    props: {
-      bg: 'green.500',
-      size: '1.25em',
-      borderColor: 'white',
-    },
-    children: [],
-    type: 'AvatarBadge',
-    parent: 'comp-K6IAX6IXQ7CAC',
-    rootParentType: 'Avatar',
-  },
   'comp-K6IB0ZX2RFMWK': {
     id: 'comp-K6IB0ZX2RFMWK',
     props: {
@@ -339,78 +302,5 @@ export const productHunt: IComponents = {
     type: 'Text',
     parent: 'comp-K6IB6HDI4V5B0',
     rootParentType: 'Text',
-  },
-  'comp-K6IB9PY4ED4M3': {
-    id: 'comp-K6IB9PY4ED4M3',
-    props: {
-      max: 4,
-      spacing: -3,
-      size: 'xs',
-      p: '',
-      pl: '4',
-      mt: '2',
-    },
-    children: [
-      'comp-K6IB9SZ4T5MC3',
-      'comp-K6IBA48KCVG5Y',
-      'comp-K6IBA7B14LO5W',
-      'comp-K6IBAM0EEARD9',
-      'comp-K6IBAQN0DSH33',
-    ],
-    type: 'AvatarGroup',
-    parent: 'comp-K6IB6HDI4V5B0',
-    rootParentType: 'Avatar',
-  },
-  'comp-K6IB9SZ4T5MC3': {
-    id: 'comp-K6IB9SZ4T5MC3',
-    props: {
-      size: 'xs',
-      name: 'Ba Adrie',
-    },
-    children: [],
-    type: 'Avatar',
-    parent: 'comp-K6IB9PY4ED4M3',
-    rootParentType: 'Avatar',
-  },
-  'comp-K6IBA48KCVG5Y': {
-    id: 'comp-K6IBA48KCVG5Y',
-    props: {
-      size: 'xs',
-      name: 'to tot',
-    },
-    children: [],
-    type: 'Avatar',
-    parent: 'comp-K6IB9PY4ED4M3',
-    rootParentType: 'Avatar',
-  },
-  'comp-K6IBA7B14LO5W': {
-    id: 'comp-K6IBA7B14LO5W',
-    props: {
-      size: 'xs',
-    },
-    children: [],
-    type: 'Avatar',
-    parent: 'comp-K6IB9PY4ED4M3',
-    rootParentType: 'Avatar',
-  },
-  'comp-K6IBAM0EEARD9': {
-    id: 'comp-K6IBAM0EEARD9',
-    props: {
-      size: 'xs',
-    },
-    children: [],
-    type: 'Avatar',
-    parent: 'comp-K6IB9PY4ED4M3',
-    rootParentType: 'Avatar',
-  },
-  'comp-K6IBAQN0DSH33': {
-    id: 'comp-K6IBAQN0DSH33',
-    props: {
-      size: 'md',
-    },
-    children: [],
-    type: 'Avatar',
-    parent: 'comp-K6IB9PY4ED4M3',
-    rootParentType: 'Avatar',
   },
 }

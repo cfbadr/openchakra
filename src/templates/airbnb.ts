@@ -70,21 +70,6 @@ export const airbnbCard: IComponents = {
     type: 'Box',
     parent: 'comp-1580479627',
   },
-  'comp-1580479639': {
-    id: 'comp-1580479639',
-    props: {
-      children: 'NEW',
-      variant: 'subtle',
-      colorScheme: 'teal',
-      mr: '2',
-      borderRadius: 'lg',
-      pl: '2',
-      pr: '2',
-    },
-    children: [],
-    type: 'Badge',
-    parent: 'comp-1580479631',
-  },
   'comp-1580479654': {
     id: 'comp-1580479654',
     props: {
