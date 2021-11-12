@@ -50,6 +50,7 @@ const CodeSandboxButton = () => {
           const code = await generateCode(components)
           setIsLoading(false)
           const parameters = buildParameters(code)
+          console.log(code)
 
           window.open(
             `https://codesandbox.io/api/v1/sandboxes/define?parameters=${parameters}`,
