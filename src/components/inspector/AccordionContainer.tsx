@@ -15,16 +15,18 @@ const AccordionContainer: React.FC<{
 } & AccordionItemProps> = ({ title, children, defaultIsOpen = true }) => {
   return (
     <AccordionItem>
-      {/* <AccordionItem defaultIsOpen={defaultIsOpen}> */}
-      <AccordionButton zIndex={2} px={3} py={2} fontSize="sm">
-        <Box flex="1" textAlign="left">
-          {title}
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-      <AccordionPanel bg="white" px={3} pb={4}>
-        {children}
-      </AccordionPanel>
+      <div style={{ backgroundColor: 'grey' }}>
+        {/* <AccordionItem defaultIsOpen={defaultIsOpen}> */}
+        <AccordionButton zIndex={2} px={3} py={2} fontSize="sm">
+          <Box flex="1" textAlign="left">
+            {title}
+          </Box>
+          <AccordionIcon />
+        </AccordionButton>
+        <AccordionPanel bg="black" px={3} pb={4}>
+          {children}
+        </AccordionPanel>
+      </div>
     </AccordionItem>
   )
 }
