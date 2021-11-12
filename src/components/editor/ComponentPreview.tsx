@@ -1,21 +1,7 @@
 import React, { memo } from 'react'
 import { useSelector } from 'react-redux'
-
-import AlertPreview from '~components/editor/previews/AlertPreview'
-import AvatarPreview, {
-  AvatarBadgePreview,
-  AvatarGroupPreview,
-} from '~components/editor/previews/AvatarPreview'
-import AccordionPreview, {
-  AccordionButtonPreview,
-  AccordionItemPreview,
-  AccordionPanelPreview,
-} from '~components/editor/previews/AccordionPreview'
 import * as Chakra from '@chakra-ui/react'
 import { getComponentBy } from '~core/selectors/components'
-import { InputRightElementPreview } from '~components/editor/previews/InputRightElement'
-import { InputLeftElementPreview } from '~components/editor/previews/InputLeftElement'
-import AspectRatioPreview from '~components/editor/previews/AspectRatioBoxPreview'
 import ButtonPreview from '~components/editor/previews/ButtonPreview'
 import PreviewContainer from '~components/editor/PreviewContainer'
 import WithChildrenPreviewContainer from '~components/editor/WithChildrenPreviewContainer'
@@ -23,8 +9,6 @@ import IconPreview from './previews/IconPreview'
 import IconButtonPreview from './previews/IconButtonPreview'
 import SelectPreview from '~components/editor/previews/SelectPreview'
 import NumberInputPreview from '~components/editor/previews/NumberInputPreview'
-import BreadcrumbPreview from './previews/BreadcrumbPreview'
-import BreadcrumbItemPreview from './previews/BreadcrumbItemPreview'
 
 const ComponentPreview: React.FC<{
   componentName: string
@@ -38,7 +22,6 @@ const ComponentPreview: React.FC<{
 
   switch (type) {
     // Simple components
-    case 'Badge':
     case 'Image':
     case 'Text':
     case 'Link':
@@ -65,15 +48,15 @@ const ComponentPreview: React.FC<{
         />
       )
     // Wrapped functional components (forward ref issue)
-    case 'AlertIcon':
+    // case 'AlertIcon':
     case 'Progress':
     case 'CloseButton':
-    case 'AccordionIcon':
+    // case 'AccordionIcon':
     case 'Code':
     case 'ListIcon':
     case 'Divider':
-    case 'AlertDescription':
-    case 'AlertTitle':
+    // case 'AlertDescription':
+    // case 'AlertTitle':
     case 'InputRightAddon':
     case 'InputLeftAddon':
     case 'Tag':
@@ -118,34 +101,34 @@ const ComponentPreview: React.FC<{
         />
       )
     // More complex components
-    case 'InputRightElement':
-      return <InputRightElementPreview component={component} />
-    case 'InputLeftElement':
-      return <InputLeftElementPreview component={component} />
-    case 'Avatar':
-      return <AvatarPreview component={component} />
-    case 'AvatarBadge':
-      return <AvatarBadgePreview component={component} />
-    case 'AvatarGroup':
-      return <AvatarGroupPreview component={component} />
-    case 'Alert':
-      return <AlertPreview component={component} />
-    case 'Accordion':
-      return <AccordionPreview component={component} />
-    case 'AccordionButton':
-      return <AccordionButtonPreview component={component} />
-    case 'AccordionItem':
-      return <AccordionItemPreview component={component} />
-    case 'AccordionPanel':
-      return <AccordionPanelPreview component={component} />
-    case 'AspectRatio':
-      return <AspectRatioPreview component={component} />
+    // case 'InputRightElement':
+    //   return <InputRightElementPreview component={component} />
+    // case 'InputLeftElement':
+    //   return <InputLeftElementPreview component={component} />
+    // case 'Avatar':
+    //   return <AvatarPreview component={component} />
+    // case 'AvatarBadge':
+    //   return <AvatarBadgePreview component={component} />
+    // case 'AvatarGroup':
+    //   return <AvatarGroupPreview component={component} />
+    // case 'Alert':
+    //   return <AlertPreview component={component} />
+    // case 'Accordion':
+    //   return <AccordionPreview component={component} />
+    // case 'AccordionButton':
+    //   return <AccordionButtonPreview component={component} />
+    // case 'AccordionItem':
+    //   return <AccordionItemPreview component={component} />
+    // case 'AccordionPanel':
+    //   return <AccordionPanelPreview component={component} />
+    // case 'AspectRatio':
+    //   return <AspectRatioPreview component={component} />
     case 'Button':
       return <ButtonPreview component={component} />
-    case 'Breadcrumb':
-      return <BreadcrumbPreview component={component} />
-    case 'BreadcrumbItem':
-      return <BreadcrumbItemPreview component={component} />
+    // case 'Breadcrumb':
+    //   return <BreadcrumbPreview component={component} />
+    // case 'BreadcrumbItem':
+    //   return <BreadcrumbItemPreview component={component} />
     case 'Icon':
       return <IconPreview component={component} />
     case 'IconButton':
